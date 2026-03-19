@@ -1,36 +1,46 @@
-# rede
+# rede (network)
 
-cada usuário da rede é também um servidor. enquanto o usuário usa a rede ele
-também está colaborando na execução do código dela e na distribuição dos
-arquivos armazenados nela. 
+## introduction
 
-a rede armazena o próprio código e o código das subredes rodando diretamente
-nela. todos os usuários da rede tem acesso a esses códigos.
+a decentralized alternative for git/github/github pages
 
-quanto mais armazenamento/processamento você disponibiliza para a rede da qual
-faz parte mais armazenamento/processamento dela você pode usar
+## description
 
-todo usuário usando a rede é considerado uma subrede.
+every user in the network is also a server. while using the network, the user is
+also collaborating in running the network code and distributing the files stored
+on it.
 
-todo usuário ganha poder de voto na rede que faz parte diretamente proporcional
-a quanto contribui em armazenamento/processamento para a rede que está usando.
+the network stores its own code and the adresses of the sub-networks running
+directly on it. all users in the network have access to these codes.
 
-só é possível adicionar novas subredes quando tem espaço/processamento
-disponivel na rede. isso significa que novos usuários só podem entrar em uma
-rede se estiver espaço disponivel nela.
+the more storage/processing you provide to the network you are part of, the
+more storage/processing from it you can use.
 
-toda subrede pode rodar código próprio contanto que também rode o código da rede
-a cima de si. o tamanho do código próprio e a quantidade de processamento que
-pode usar é proporcional a quantidade que contribui para a rede que faz parte.
+every user on the network is considered a sub-network.
 
-uma subrede que contribua com mais de 1% da rede a cima de si própria pode
-iniciar uma votação para que parte de seu código seja adicionado a rede a cima.
-dois terços 
+every user gains voting power in the network they are part of, time weighted
+proportional to how much they contribute in storage/processing to the network
+they are using.
 
-## rede raiz
+new sub-networks can only be added when there is available space/processing
+on the network. this means new users can only join a network if there is
+available capacity on it.
 
-serviço de identificação
-TODO:
+every sub-network can run its own code as long as it also runs the code of
+the network above it. the size of the custom code and the amount of processing
+it can use is proportional to how much it contributes to the network it is
+part of.
 
-serviço de armazenamento
-TODO:
+a sub-network that contributes more than 1% of resources to the network above
+it can initiate a vote for part of its code to be added to the parent network.
+a two-thirds majority is required for approval.
+
+a sub-network that contributes to more than 10% of resources of the network
+abote it can initiate a vote to replace a part of the code of the network above
+with it's own code. a two-third majority is required for approval.
+
+## root network
+
+provides a storage/hosting service. hosts a root file with the code that
+the network runs, a JIT compiler to run it and any additional files the user
+wants
